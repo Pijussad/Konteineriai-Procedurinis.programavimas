@@ -79,37 +79,43 @@ double pazymiai(vector<int> paz, bool armediana) {
 }
 
 
-void isfailo(int &n){
+void isfailo(int &n) {
     ifstream fd("kursiokai.txt");
     if (!fd) {
         throw runtime_error("Nepavyko atidaryti failo");
     }
     string skaitymas;
     int paz_sk=0;
-    while (skaitymas != "Egzaminas" && skaitymas != "egz" && skaitymas != "egzaminas"&& skaitymas != "Egz"){
+    while (skaitymas != "Egzaminas" && skaitymas != "egz" && skaitymas != "egzaminas"&& skaitymas != "Egz") {
         fd>>skaitymas;
         paz_sk++;
     }
     paz_sk=paz_sk-3;
-    do {
-        studentai.push_back(Studentas());
-        Studentas& temp = studentai.back();
-        if (!(fd >> temp.pavarde >> temp.vardas)) {
-            break;
-        }
-        int pazymys;
-        for (int i=0; i<paz_sk; i++){
-            if (!(fd >> pazymys)) {
+    try {
+        do {
+            studentai.push_back(Studentas());
+            Studentas& temp = studentai.back();
+            if (!(fd >> temp.pavarde >> temp.vardas)) {
+                break;
+            }
+            int pazymys;
+            for (int i=0; i<paz_sk; i++) {
+                if (!(fd >> pazymys)) {
+                    throw runtime_error("Blogas duomenų formatas");
+                }
+                studentai.back().paz.push_back(pazymys);
+            }
+            if (!(fd >> studentai.back().egz)) {
                 throw runtime_error("Blogas duomenų formatas");
             }
-            studentai.back().paz.push_back(pazymys);
-        }
-        if (!(fd >> studentai.back().egz)) {
-            throw runtime_error("Blogas duomenų formatas");
-        }
-        n++;
-    } while (!fd.eof());
+            n++;
+        } while (!fd.eof());
+    }
+    catch (const runtime_error &a) {
+        cout << "Klaida: " << a.what() << endl;
+    }
 }
+
 
   
   
