@@ -1,4 +1,5 @@
-![Gauti duomenys](Programavimo uzduotis/Screenshot 2023-04-06 at 16.31.36.png)  rodo, kiek laiko reikia trims skirtingoms duomenų struktūroms ("vektoriams", "sąrašams" ir "Deque") atlikti tris operacijas ("skaitymą", "rikiavimą" ir "rūšiavimą + išvedimą") su įvairaus dydžio įvesties duomenimis (1000, 10000, 100000, 1000000 ir 1000000 elementų).
+aa ![Gauti duomenys](Programavimo uzduotis/Screenshot 2023-04-06 at 16.31.36.png)
+rodo, kiek laiko reikia trims skirtingoms duomenų struktūroms ("vektoriams", "sąrašams" ir "Deque") atlikti tris operacijas ("skaitymą", "rikiavimą" ir "rūšiavimą + išvedimą") su įvairaus dydžio įvesties duomenimis (1000, 10000, 100000, 1000000 ir 1000000 elementų).
 
 Remdamiesi duomenimis, galime padaryti šiuos pastebėjimus:
 
