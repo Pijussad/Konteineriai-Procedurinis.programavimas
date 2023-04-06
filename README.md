@@ -1,5 +1,5 @@
 ![Gauti duomenys](https://github.com/Pijussad/1-uzdavinys/blob/V0.5/Programavimo%20uzduotis/Screenshot%202023-04-06%20at%2016.31.36.png?raw=true)
-rodo, kiek laiko reikia trims skirtingoms duomenų struktūroms ("vektoriams", "sąrašams" ir "Deque") atlikti tris operacijas ("skaitymą", "rikiavimą" ir "rūšiavimą + išvedimą") su įvairaus dydžio įvesties duomenimis (1000, 10000, 100000, 1000000 ir 1000000 elementų).
+Duomenys rodo, kiek laiko reikia trims skirtingoms duomenų struktūroms ("vektoriams", "sąrašams" ir "Deque") atlikti tris operacijas ("skaitymą", "rikiavimą" ir "rūšiavimą + išvedimą") su įvairaus dydžio įvesties duomenimis (1000, 10000, 100000, 1000000 ir 1000000 elementų). Testavimas buvo atliktas naudojant Macbook Air 2021 procesorius M1, atminties - 256gb, operatyviosios atminties - 8gb.
 
 Remdamiesi duomenimis, galime padaryti šiuos pastebėjimus:
 
