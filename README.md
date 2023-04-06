@@ -104,4 +104,7 @@ Visas laikas - 3.90218
 1000000 elementų rūšiavimas ir išvedimas užtruko: 26.7792 s
 Visas laikas - 44.2913
 
+![Statistika](Programavimo uzduotis/Screenshot 2023-04-06 at 16.31.36.png)
+
+
 
