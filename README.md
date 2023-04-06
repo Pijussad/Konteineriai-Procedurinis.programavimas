@@ -1,4 +1,4 @@
-Žemiau pateikti duomenys rodo, kiek laiko reikia trims skirtingoms duomenų struktūroms ("vektoriams", "sąrašams" ir "Deque") atlikti tris operacijas ("skaitymą", "rikiavimą" ir "rūšiavimą + išvedimą") su įvairaus dydžio įvesties duomenimis (1000, 10000, 100000, 1000000 ir 1000000 elementų).
+![Gauti duomenys]([Programavimo uzduotis/Screenshot 2023-04-06 at 16.31.36.png](https://github.com/Pijussad/1-uzdavinys/blob/6edb943eaecda421fc9a53c1f3d8560a71020c3c/Programavimo%20uzduotis/Screenshot%202023-04-06%20at%2016.31.36.png)) rodo, kiek laiko reikia trims skirtingoms duomenų struktūroms ("vektoriams", "sąrašams" ir "Deque") atlikti tris operacijas ("skaitymą", "rikiavimą" ir "rūšiavimą + išvedimą") su įvairaus dydžio įvesties duomenimis (1000, 10000, 100000, 1000000 ir 1000000 elementų).
 
 Remdamiesi duomenimis, galime padaryti šiuos pastebėjimus:
 
@@ -104,7 +104,7 @@ Visas laikas - 3.90218
 1000000 elementų rūšiavimas ir išvedimas užtruko: 26.7792 s
 Visas laikas - 44.2913
 
-![Statistika]([Programavimo uzduotis/Screenshot 2023-04-06 at 16.31.36.png](https://github.com/Pijussad/1-uzdavinys/blob/6edb943eaecda421fc9a53c1f3d8560a71020c3c/Programavimo%20uzduotis/Screenshot%202023-04-06%20at%2016.31.36.png))
+
 
 
 
