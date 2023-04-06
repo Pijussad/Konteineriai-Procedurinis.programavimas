@@ -17,14 +17,14 @@ int main() {
             }while(pasirinkimas2 != '1' && pasirinkimas2 != '2');
             
             if (pasirinkimas2== '1' ){
-                for(int i=1000; i<1100000; i=i*10){
+                for(int i=1000; i<11000000; i=i*10){
                     sum=0;
                     n=0;
                     auto start = std::chrono::high_resolution_clock::now();
                     generateFile(i);
                     auto end = std::chrono::high_resolution_clock::now();
                     std::chrono::duration<double> diff = end-start; // Skirtumas (s)
-                    cout<< i<<"elementų užpildymas užtruko: "<< diff.count() << " s\n";
+                    cout<< i<<" elementų užpildymas užtruko: "<< diff.count() << " s\n";
                     ofstream fr("laikai.txt");
                     fr<< diff.count() << endl;
                     //cout<<":::::::::::"<<A[4]<<"::::::::::";
@@ -33,7 +33,7 @@ int main() {
                     pabaiga(n);
                     ifstream fl("laikai.txt");
                     double b;
-                    for(int i=0; i<3; i++){
+                    for(int i=0; i<4; i++){
                         fl>>b;
                         sum=b+sum;
                     }

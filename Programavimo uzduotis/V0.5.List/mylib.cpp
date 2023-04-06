@@ -6,6 +6,72 @@ list<Studentas> studentai;
 bool compareByName(const Studentas& s1, const Studentas& s2) {
     return s1.vardas < s2.vardas;
 }
+double pazymiai(list<int> paz, bool armediana) {
+    int n = paz.size();
+    if (n == 0) {
+        return 0.0;
+    }
+    double sum = 0;
+    for (auto it = paz.begin(); it != paz.end(); ++it) {
+        sum += *it;
+    }
+    if (armediana) {
+        auto med = paz.begin();
+        std::advance(med, n / 2);
+        paz.sort();
+        if (n % 2 == 0) {
+            auto med2 = med;
+            std::advance(med2, -1);
+            return static_cast<double>(*med + *med2) / 2;
+        } else {
+            return static_cast<double>(*med);
+        }
+    } else {
+        return sum / n;
+    }
+}
+
+
+void pabaiga(int n){
+    //skaiciuojamas galutinis balas su mediana arba vidurkiu
+    cout << "Ar norite galutinio balo vidurkio (1), ar medianos (2)? ";
+    do {
+        cin >> pasirinkimas;
+        if (pasirinkimas != '1' && pasirinkimas != '2') cout << "Netinkamas pasirinkimas. Prašome pasirinkti 1 arba 2 - ";
+    } while (pasirinkimas != '1' && pasirinkimas != '2');
+
+    bool armediana = (pasirinkimas == '2'); //char pakeiciamas i bool argumenta
+
+    //cout << endl << left << setw(15) << "Vardas" << setw(20) << "Pavarde" << setw(15) << (armediana ? "Galutinis (Med.)" : "Galutinis (Vid.)") << endl;
+    //cout << "-------------------------------------------------------------------------------------" << endl;
+    
+    auto start2 = std::chrono::high_resolution_clock::now();
+    studentai.sort(compareByName);
+    auto end2 = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> diff2 = end2-start2; // Skirtumas (s)
+    cout <<n<<" elementų rikiavimas uztruko: "<< diff2.count() << " s\n";
+    ofstream fr("laikai.txt", std::ios::app);
+    fr << diff2.count() << endl;
+    
+    auto start = std::chrono::high_resolution_clock::now();
+    for (auto it = studentai.begin(); it != studentai.end(); ++it) {
+        double galutinis = pazymiai(list<int>(it->paz.begin(), it->paz.end()), armediana) * 0.4 + it->egz * 0.6;
+
+        //spausd(*it, armediana, galutinis);
+
+        if (galutinis < 5) {
+            ofstream fr("vargsiukai.txt", std::ios::app);
+            isved(fr, *it, armediana, galutinis);
+        } else {
+            ofstream fm("saunuoliai.txt", std::ios::app);
+            isved(fm, *it, armediana, galutinis);
+        }
+    }
+    auto end = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> diff = end-start; // Skirtumas (s)
+    cout << n<<" elementų rūšiavimas ir išvedimas užtruko: "<< diff.count() << " s\n";
+    fr << diff.count() << endl;
+}
 
 void generateFile(int n) {
   std::random_device rd;
@@ -82,21 +148,7 @@ void spausd(Studentas& temp, bool armediana, double galutinis) {
     cout << endl << left << setw(15) << temp.vardas << setw(20) << temp.pavarde << fixed << setprecision(2) << setw(15) << galutinis << endl;
 }
 
-double pazymiai(list<int> paz, bool armediana) {
-    int n = paz.size();
-    if (n == 0) {
-        return 0.0;
-    }
-    double sum = 0;
-    for (auto it = paz.begin(); it != paz.end(); ++it) {
-        sum += *it;
-    }
-    if (armediana) {
-        return sum / n;
-    } else {
-        return sum;
-    }
-}
+
 
 
 void isfailo(ifstream& fd, int &n) {
@@ -136,7 +188,7 @@ void isfailo(ifstream& fd, int &n) {
     }
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> diff = end-start; // Skirtumas (s)
-    cout << n<<"elementų nuskaitymas užtruko: "<< diff.count() << " s\n";
+    cout << n<<" elementų nuskaitymas užtruko: "<< diff.count() << " s\n";
     ofstream fr("laikai.txt", std::ios::app);
     fr<< diff.count() << endl;
 }
@@ -162,40 +214,9 @@ void isfailo(ifstream& fd, int &n) {
   } while (pasirinkimas != '2');
   }
   
-  void pabaiga(int n){
-      auto start = std::chrono::high_resolution_clock::now();
-      //skaiciuojamas galutinis balas su mediana arba vidurkiu
-  cout << "Ar norite galutinio balo vidurkio (1), ar medianos (2)? ";
-      do {
-        cin >> pasirinkimas;
-        if (pasirinkimas != '1' && pasirinkimas != '2') cout << "Netinkamas pasirinkimas. Prašome pasirinkti 1 arba 2 - ";
-      } while (pasirinkimas != '1'  &&  pasirinkimas != '2');
-      
-  bool armediana = (pasirinkimas == '2'); //char pakeiciamas i bool argumenta
-  
-    //cout << endl << left << setw(15) << "Vardas" << setw(20) << "Pavarde" << setw(15) << (armediana ? "Galutinis (Med.)" : "Galutinis (Vid.)") << endl;
-    //cout << "-------------------------------------------------------------------------------------" << endl;
-    sort(studentai.begin(), studentai.end(), compareByName);
-  for (int i = 0; i < n; i++) {
-    double galutinis = pazymiai(studentai[i].paz, armediana) * 0.4 + studentai[i].egz * 0.6;
-    //spausd(studentai[i], armediana, galutinis);
-      
-      if (galutinis<5){
-          ofstream fr("vargsiukai.txt", std::ios::app);
-          isved(fr, studentai[i], armediana, galutinis);
-      }
-      else{
-          ofstream fm("saunuoliai.txt", std::ios::app);
-          isved(fm, studentai[i], armediana, galutinis);
-      }
-  }
-      auto end = std::chrono::high_resolution_clock::now();
-      std::chrono::duration<double> diff = end-start; // Skirtumas (s)
-      cout << n<<"elementų rūšiavimas ir išvedimas užtruko: "<< diff.count() << " s\n";
-      ofstream fr("laikai.txt", std::ios::app);
-      fr<< diff.count() << endl;
-  }
+
 
 void isved(ofstream& fr, Studentas& temp, bool armediana, double galutinis) {
     fr << left << setw(15) << temp.vardas << setw(20) << temp.pavarde << fixed << setprecision(2) << setw(15) << galutinis << endl;
 }
+

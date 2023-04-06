@@ -142,7 +142,7 @@ void isfailo(ifstream& fd, int &n) {
     }
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> diff = end-start; // Skirtumas (s)
-    cout << n<<"elementų nuskaitymas užtruko: "<< diff.count() << " s\n";
+    cout << n<<" elementų nuskaitymas užtruko: "<< diff.count() << " s\n";
     ofstream fr("laikai.txt", std::ios::app);
     fr<< diff.count() << endl;
 }
@@ -166,7 +166,7 @@ void isfailo(ifstream& fd, int &n) {
   }
   
   void pabaiga(int n){
-      auto start = std::chrono::high_resolution_clock::now();
+      
       //skaiciuojamas galutinis balas su mediana arba vidurkiu
   cout << "Ar norite galutinio balo vidurkio (1), ar medianos (2)? ";
       do {
@@ -178,7 +178,16 @@ void isfailo(ifstream& fd, int &n) {
   
     //cout << endl << left << setw(15) << "Vardas" << setw(20) << "Pavarde" << setw(15) << (armediana ? "Galutinis (Med.)" : "Galutinis (Vid.)") << endl;
     //cout << "-------------------------------------------------------------------------------------" << endl;
-    sort(studentai.begin(), studentai.end(), compareByName);
+      
+      auto start2 = std::chrono::high_resolution_clock::now();
+      sort(studentai.begin(), studentai.end(), compareByName);
+      auto end2 = std::chrono::high_resolution_clock::now();
+      std::chrono::duration<double> diff2 = end2-start2; // Skirtumas (s)
+      cout <<n<<" elementų rikiavimas uztruko: "<< diff2.count() << " s\n";
+      ofstream fr("laikai.txt", std::ios::app);
+      fr << diff2.count() << endl;
+    
+      auto start = std::chrono::high_resolution_clock::now();
   for (int i = 0; i < n; i++) {
     double galutinis = pazymiai(studentai[i].paz, armediana) * 0.4 + studentai[i].egz * 0.6;
     //spausd(studentai[i], armediana, galutinis);
@@ -194,8 +203,7 @@ void isfailo(ifstream& fd, int &n) {
   }
       auto end = std::chrono::high_resolution_clock::now();
       std::chrono::duration<double> diff = end-start; // Skirtumas (s)
-      cout << n<<"elementų rūšiavimas ir išvedimas užtruko: "<< diff.count() << " s\n";
-      ofstream fr("laikai.txt", std::ios::app);
+      cout << n<<" elementų rūšiavimas ir išvedimas užtruko: "<< diff.count() << " s\n";
       fr<< diff.count() << endl;
   }
 
