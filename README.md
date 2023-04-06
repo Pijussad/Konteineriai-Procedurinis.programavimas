@@ -1,8 +1,5 @@
 
-![Gauti duomenys]([/Programavimo uzduotis/Screenshot 2023-04-06 at 16.31.36.png](https://github.com/Pijussad/1-uzdavinys/blob/V0.5/Programavimo%20uzduotis/Screenshot%202023-04-06%20at%2016.31.36.png))
-
-
-![Gauti duomenys]([/Programavimo uzduotis/Screenshot 2023-04-06 at 16.31.36.png](https://github.com/Pijussad/1-uzdavinys/blob/V0.5/Programavimo%20uzduotis/Screenshot%202023-04-06%20at%2016.31.36.png))
+![Gauti duomenys]([Programavimo uzduotis/Screenshot 2023-04-06 at 16.31.36.png))
 
 rodo, kiek laiko reikia trims skirtingoms duomenų struktūroms ("vektoriams", "sąrašams" ir "Deque") atlikti tris operacijas ("skaitymą", "rikiavimą" ir "rūšiavimą + išvedimą") su įvairaus dydžio įvesties duomenimis (1000, 10000, 100000, 1000000 ir 1000000 elementų).
 
