@@ -171,4 +171,5 @@ Norėdami įdiegti ir paleisti programą, atlikite šiuos veiksmus:
 1.	Klonuoti saugyklą: git klonas https://github.com/Pijussad/1-uzdavinys.git
 2.	Sukompiliuokite šaltinio failus: g++ -std=c++11 -o program main.cpp mylib.cp
 3.	Paleiskite programą: ./program
+
 Prieš paleisdami kodą įsitikinkite, kad jūsų sistemoje yra įdiegtas C++ kompiliatorius.
