@@ -152,6 +152,158 @@ Remiantis skirtingomis strategijomis, optimizuotas mokinių rūšiavimas ir pada
 •	2 strategija: bendro mokinio konteinerio padalijimas naudojant tik vieną naują konteinerį
 Išmatuotas programos našumas naudojant skirtingus konteinerių tipus (vektorių, sąrašą ir deque) ir palyginti rezultatai. Taip pat buvo pritaikyti tinkami algoritmai, kad būtų paspartintas studento skaidymo procedūrą vektoriniame konteineryje.
 
+Gauti greičių rezultatai:
+V0.5.Vector be vektoriaus saunuoliai optimizuotas:
+1000 elementų nuskaitymas užtruko: 0.016776 s
+Ar norite galutinio balo vidurkio (1), ar medianos (2)? 1
+1000 elementų rikiavimas uztruko: 0.0059305 s
+1000 elementų rūšiavimas užtruko: 0.00261258 s
+Visas laikas - 0.0279317
+
+10000 elementų nuskaitymas užtruko: 0.0667338 s
+Ar norite galutinio balo vidurkio (1), ar medianos (2)? 1
+10000 elementų rikiavimas uztruko: 0.0390531 s
+10000 elementų rūšiavimas užtruko: 0.011127 s
+Visas laikas - 0.128041
+
+100000 elementų nuskaitymas užtruko: 0.417466 s
+Ar norite galutinio balo vidurkio (1), ar medianos (2)? 1
+100000 elementų rikiavimas uztruko: 0.208669 s
+100000 elementų rūšiavimas užtruko: 0.0557232 s
+Visas laikas - 0.737581
+
+
+
+V0.5.Vector be vektoriaus saunuoliai:
+1000 elementų nuskaitymas užtruko: 0.0164362 s
+Ar norite galutinio balo vidurkio (1), ar medianos (2)? 1
+1000 elementų rikiavimas uztruko: 0.00562658 s
+1000 elementų rūšiavimas užtruko: 0.0287362 s
+Visas laikas - 0.0795352
+
+10000 elementų nuskaitymas užtruko: 0.0576796 s
+Ar norite galutinio balo vidurkio (1), ar medianos (2)? 1
+10000 elementų rikiavimas uztruko: 0.0377286 s
+10000 elementų rūšiavimas užtruko: 1.20466 s
+Visas laikas - 2.50473
+
+100000 elementų nuskaitymas užtruko: 0.419422 s
+Ar norite galutinio balo vidurkio (1), ar medianos (2)? 1
+100000 elementų rikiavimas uztruko: 0.213035 s
+100000 elementų rūšiavimas užtruko: 117.502 s
+Visas laikas - 235.636
+
+
+V0.5.Vector
+1000 elementų nuskaitymas užtruko: 0.0170906 s
+Ar norite galutinio balo vidurkio (1), ar medianos (2)? 1
+1000 elementų rikiavimas uztruko: 0.00499308 s
+1000 elementų rūšiavimas užtruko: 0.00281296 s
+Visas laikas - 0.0277096
+
+10000 elementų nuskaitymas užtruko: 0.0685214 s
+Ar norite galutinio balo vidurkio (1), ar medianos (2)? 1
+10000 elementų rikiavimas uztruko: 0.0407972 s
+10000 elementų rūšiavimas užtruko: 0.0118498 s
+Visas laikas - 0.133018
+
+100000 elementų nuskaitymas užtruko: 0.416091 s
+Ar norite galutinio balo vidurkio (1), ar medianos (2)? 1
+100000 elementų rikiavimas uztruko: 0.22216 s
+100000 elementų rūšiavimas užtruko: 0.0597769 s
+Visas laikas - 0.757805
+
+
+V0.5.List be vektoriaus saunuoliai:
+
+1000 elementų nuskaitymas užtruko: 0.0149624 s
+Ar norite galutinio balo vidurkio (1), ar medianos (2)? 1
+1000 elementų rikiavimas uztruko: 0.00222442 s
+1000 elementų rūšiavimas užtruko: 0.00680925 s
+Visas laikas - 0.0308053
+
+10000 elementų nuskaitymas užtruko: 0.0681469 s
+Ar norite galutinio balo vidurkio (1), ar medianos (2)? 1
+10000 elementų rikiavimas uztruko: 0.018267 s
+10000 elementų rūšiavimas užtruko: 0.0368562 s
+Visas laikas - 0.160126
+
+100000 elementų nuskaitymas užtruko: 0.417779 s
+Ar norite galutinio balo vidurkio (1), ar medianos (2)? 1
+100000 elementų rikiavimas uztruko: 0.103651 s
+100000 elementų rūšiavimas užtruko: 0.179618 s
+Visas laikas - 0.880666
+
+
+V0.5.List:
+1000 elementų nuskaitymas užtruko: 0.017573 s
+Ar norite galutinio balo vidurkio (1), ar medianos (2)? 1
+1000 elementų rikiavimas uztruko: 0.00246679 s
+1000 elementų rūšiavimas užtruko: 0.00716992 s
+Visas laikas - 0.0343796
+
+10000 elementų nuskaitymas užtruko: 0.0643827 s
+Ar norite galutinio balo vidurkio (1), ar medianos (2)? 1
+10000 elementų rikiavimas uztruko: 0.0188411 s
+10000 elementų rūšiavimas užtruko: 0.0390057 s
+Visas laikas - 0.161235
+
+100000 elementų nuskaitymas užtruko: 0.417796 s
+Ar norite galutinio balo vidurkio (1), ar medianos (2)? 1
+100000 elementų rikiavimas uztruko: 0.106296 s
+100000 elementų rūšiavimas užtruko: 0.193469 s
+Visas laikas - 0.91103
+
+V0.5.Deque be vektoriaus saunuoliai:
+1000 elementų nuskaitymas užtruko: 0.0153742 s
+Ar norite galutinio balo vidurkio (1), ar medianos (2)? 1
+1000 elementų rikiavimas uztruko: 0.00679471 s
+1000 elementų rūšiavimas užtruko: 0.028565 s
+Visas laikas - 0.0792989
+
+10000 elementų nuskaitymas užtruko: 0.0468038 s
+Ar norite galutinio balo vidurkio (1), ar medianos (2)? 1
+10000 elementų rikiavimas uztruko: 0.0494158 s
+10000 elementų rūšiavimas užtruko: 1.09471 s
+Visas laikas - 2.28564
+
+100000 elementų nuskaitymas užtruko: 0.36504 s
+Ar norite galutinio balo vidurkio (1), ar medianos (2)? 1
+100000 elementų rikiavimas uztruko: 0.290231 s
+100000 elementų rūšiavimas užtruko: 106.608 s
+Visas laikas - 213.871
+
+
+
+V0.5.Deque:
+1000 elementų nuskaitymas užtruko: 0.0146567 s
+Ar norite galutinio balo vidurkio (1), ar medianos (2)? 1
+1000 elementų rikiavimas uztruko: 0.00710683 s
+1000 elementų rūšiavimas užtruko: 0.00536538 s
+Visas laikas - 0.0324943
+
+10000 elementų nuskaitymas užtruko: 0.0560537 s
+Ar norite galutinio balo vidurkio (1), ar medianos (2)? 1
+10000 elementų rikiavimas uztruko: 0.053945 s
+10000 elementų rūšiavimas užtruko: 0.0231325 s
+Visas laikas - 0.156264
+
+100000 elementų nuskaitymas užtruko: 0.344874 s
+Ar norite galutinio balo vidurkio (1), ar medianos (2)? 1
+100000 elementų rikiavimas uztruko: 0.320503 s
+100000 elementų rūšiavimas užtruko: 0.168886 s
+Visas laikas - 1.00315
+
+Apibendrinimas:
+Remdamiesi pateiktais duomenimis, galime padaryti šias išvadas:
+
+"V0.5.Vector be vektoriaus "Šaunuoliai" optimizuotas" įgyvendinimas nuosekliai lenkia kitus įgyvendinimus pagal nuskaitymo, rūšiavimo ir bendrą laiką visų bandytų įvesties dydžių (1000, 10000 ir 100000 elementų) atveju. Jos laiko matavimai nuosekliai yra mažiausi tarp visų įgyvendinimų.
+"V0.5.Vector" įgyvendinimas veikia panašiai kaip "V0.5.List" įgyvendinimas. Abiejų jų nuskaitymo, rūšiavimo ir bendro laiko matavimai yra panašūs skirtingiems įvesties dydžiams. Tačiau "V0.5.List" įgyvendinimo rūšiavimo laikas šiek tiek ilgesnis, kai įvesties dydis yra didesnis.
+"V0.5.Deque be vektoriaus 'Šaunuoliai'" ir "V0.5.Deque" realizacijų nuskaitymo, rūšiavimo ir bendro laiko matavimai, palyginti su "V0.5.Vector" ir "V0.5.List" realizacijomis, apskritai yra didesni. Rūšiavimo laikas ypač didesnis "V0.5.Deque" įgyvendinimuose, ypač didesnių įvesties dydžių atveju.
+Įgyvendinimas be vektoriaus "Šaunuoliai" optimizavimo nuosekliai rodo didesnius rūšiavimo laikus, palyginti su optimizuotais įgyvendinimais, visose duomenų struktūrose (Vector, List ir Deque). Tai rodo, kad vektoriaus "Šaunuoliai" optimizavimas suteikia našumo naudos rūšiavimo operacijų atžvilgiu.
+Nuskaitymo laikai visose realizacijose išlieka gana pastovūs esant skirtingiems įvesties dydžiams, o tai rodo, kad pačiai skenavimo operacijai duomenų struktūros pasirinkimas didelės įtakos neturi.
+Apskritai geriausiai iš testuotų realizacijų veikia realizacija "V0.5.Vector be vektoriaus "Šaunuoliai" optimizavimo", po jos seka realizacijos "V0.5.Vector" ir "V0.5.List" "V0.5.Deque" ir realizacijos "be vektoriaus 'Šaunuoliai'" realizacijos pasižymi lėtesniu našumu, palyginti su jomis.
+
 Failų paaiškinimas:
 •	mylib.h: antraštės failas, kuriame yra funkcijų deklaracijos ir duomenų struktūros
 •	makefile: paleidimo failas
