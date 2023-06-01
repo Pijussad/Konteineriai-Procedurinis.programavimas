@@ -44,7 +44,8 @@ Saugyklos struktūra
 •	mylib.cpp: šaltinio failas su programos įgyvendinimu
 •	kursiokai.txt: Duomenų failo pavyzdys
 •	README.md: Readme failas, kuriame yra informacija apie programą ir jos versijas
-Naudojimas
+
+Naudojimas:
 1.	Sukompiliuokite programą naudodami pageidaujamą kompiliatorių.
 2.	Paleiskite sukompiliuotą vykdomąjį failą.
 3.	Vykdykite instrukcijas, kad įvestumėte mokinio duomenis arba skaitytumėte duomenis iš failo.
@@ -52,7 +53,7 @@ Naudojimas
 Testavimas
 Programa buvo išbandyta naudojant įvairius įrašų dydžius ir konteinerių tipus, kad būtų užtikrintas jos veikimas ir funkcionalumas. Testavimo parametrai apima procesoriaus, RAM ir HDD specifikacijas.
 
-Montavimas
+Diegimas:
 Norėdami įdiegti ir paleisti programą, atlikite šiuos veiksmus:
 1.	Klonuoti saugyklą: git klonas https://github.com/yourusername/yourrepository.git
 2.	Sukompiliuokite šaltinio failus: g++ mylib.cpp -o student_grades
