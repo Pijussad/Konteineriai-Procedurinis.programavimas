@@ -3,6 +3,7 @@ Kodas skirtas įvesti studentų duomenis, bei skaičiuoti galutinius balus naudo
 Galutinis balas skaičiuojamas pagal formulę `(0.4 * namų darbų vidurkis + 0.6 * egzamino pažymys)`.
 
 Ši programa leidžia vartotojams įvesti mokinių duomenis ir apskaičiuoti galutinius pažymius naudojant vidurkį arba medianą. Pažymių ir mokinių skaičius neribojamas, o programa palaiko du pažymių saugojimo būdus: C masyvus ir std::vector.
+
 0.1 versija
 Funkcijos
 •	Įvesti mokinio vardą ir pavardę
@@ -10,15 +11,18 @@ Funkcijos
 •	Pažymių ir studentų skaičius yra neribotas. Tai pasiekiama naudojant masyvus, `new`, `delete` metodą.
 •	Apskaičiuokite galutinį balą naudodami vidurkio formulę (0,4 * vidutinis namų darbų įvertinimas + 0,6 * egzamino pažymys)
 •	Rodyti galutinius balus ekrane
+
 0.2 versija
 funkcijos
 •	Leisti nuskaityti duomenis iš failo (kursiokai.txt)
 •	Išvestyje rūšiuokite mokinius pagal vardą (pirmą arba paskutinį).
+
 0.3 versija
 Refaktoringas
 •	Kur reikia naudojamos struktūros
 •	Perkeltos funkcijos ir duomenų tipai į atskirus antraščių failus (*.h)
 •	Klaidų atvejais naudojamas išimčių tvarkymas
+
 0.4 versija
 funkcijos
 •	Sukurtas failų generatorius, kad generuotų atsitiktinius studentų sąrašo failus
@@ -26,6 +30,7 @@ funkcijos
 •	Suskirsto mokinius į dvi kategorijas pagal galutinį balą: „vargšiukus“ (balas < 5,0) ir „šaunuolius“ (balas >= 5,0)
 •	Duomenys išvedami suskirsčius mokinius į du naujus failus
 •	Atlikta įvairių programos žingsnių greičio analizė
+
 0.5 versija
 Konteinerių testavimas
 Išmatuotas programos našumas naudojant tris skirtingus konteinerių tipus:
