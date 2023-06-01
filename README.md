@@ -298,10 +298,15 @@ Apibendrinimas:
 Remdamiesi pateiktais duomenimis, galime padaryti šias išvadas:
 
 "V0.5.Vector be vektoriaus "Šaunuoliai" optimizuotas" įgyvendinimas nuosekliai lenkia kitus įgyvendinimus pagal nuskaitymo, rūšiavimo ir bendrą laiką visų bandytų įvesties dydžių (1000, 10000 ir 100000 elementų) atveju. Jos laiko matavimai nuosekliai yra mažiausi tarp visų įgyvendinimų.
+
 "V0.5.Vector" įgyvendinimas veikia panašiai kaip "V0.5.List" įgyvendinimas. Abiejų jų nuskaitymo, rūšiavimo ir bendro laiko matavimai yra panašūs skirtingiems įvesties dydžiams. Tačiau "V0.5.List" įgyvendinimo rūšiavimo laikas šiek tiek ilgesnis, kai įvesties dydis yra didesnis.
+
 "V0.5.Deque be vektoriaus 'Šaunuoliai'" ir "V0.5.Deque" realizacijų nuskaitymo, rūšiavimo ir bendro laiko matavimai, palyginti su "V0.5.Vector" ir "V0.5.List" realizacijomis, apskritai yra didesni. Rūšiavimo laikas ypač didesnis "V0.5.Deque" įgyvendinimuose, ypač didesnių įvesties dydžių atveju.
+
 Įgyvendinimas be vektoriaus "Šaunuoliai" optimizavimo nuosekliai rodo didesnius rūšiavimo laikus, palyginti su optimizuotais įgyvendinimais, visose duomenų struktūrose (Vector, List ir Deque). Tai rodo, kad vektoriaus "Šaunuoliai" optimizavimas suteikia našumo naudos rūšiavimo operacijų atžvilgiu.
+
 Nuskaitymo laikai visose realizacijose išlieka gana pastovūs esant skirtingiems įvesties dydžiams, o tai rodo, kad pačiai skenavimo operacijai duomenų struktūros pasirinkimas didelės įtakos neturi.
+
 Apskritai geriausiai iš testuotų realizacijų veikia realizacija "V0.5.Vector be vektoriaus "Šaunuoliai" optimizavimo", po jos seka realizacijos "V0.5.Vector" ir "V0.5.List" "V0.5.Deque" ir realizacijos "be vektoriaus 'Šaunuoliai'" realizacijos pasižymi lėtesniu našumu, palyginti su jomis.
 
 Failų paaiškinimas:
