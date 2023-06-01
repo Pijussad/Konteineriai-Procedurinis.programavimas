@@ -154,9 +154,11 @@ Išmatuotas programos našumas naudojant skirtingus konteinerių tipus (vektori�
 
 Failų paaiškinimas:
 •	mylib.h: antraštės failas, kuriame yra funkcijų deklaracijos ir duomenų struktūros
+•	makefile: paleidimo failas
 •	mylib.cpp: šaltinio failas su programos įgyvendinimu
 •	kursiokai.txt: Duomenų failo pavyzdys
 •	README.md: Readme failas, kuriame yra informacija apie programą ir jos versijas
+
 
 Naudojimas:
 1.	Sukompiliuokite programą naudodami pageidaujamą kompiliatorių.
@@ -166,10 +168,19 @@ Naudojimas:
 Testavimas
 Programa buvo išbandyta naudojant įvairius įrašų dydžius ir konteinerių tipus, kad būtų užtikrintas jos veikimas ir funkcionalumas. Testavimo parametrai apima procesoriaus, RAM ir HDD specifikacijas.
 
-Diegimas:
+
+Diegimas :
+Prieš paleisdami kodą įsitikinkite, kad jūsų sistemoje yra įdiegtas C++ kompiliatorius.
+Diegimas iki V1.0:
+Norėdami įdiegti ir paleisti programą, atlikite šiuos veiksmus:
+1.	Klonuoti saugyklą: git klonas https://github.com/Pijussad/1-uzdavinys.git
+2.	Sukompiliuokite šaltinio failus: g++ -std=c++11 -o program main.cpp mylib.cp
+3.	Paleiskite programą: ./program
+
+Diegimas nuo V1.0:
 Norėdami įdiegti ir paleisti programą, atlikite šiuos veiksmus:
 1.	Klonuoti saugyklą: git klonas https://github.com/Pijussad/1-uzdavinys.git
 2.	Pasirinkite atitinkamą versiją ir sukompiliuokite šaltinio failus: make
 3.	Paleiskite programą: ./program
 
-Prieš paleisdami kodą įsitikinkite, kad jūsų sistemoje yra įdiegtas C++ kompiliatorius.
+
