@@ -155,14 +155,6 @@ Failų paaiškinimas:
 •	README.md: Readme failas, kuriame yra informacija apie programą ir jos versijas
 
 
-Naudojimas:
-1.	Sukompiliuokite programą naudodami pageidaujamą kompiliatorių.
-2.	Paleiskite sukompiliuotą vykdomąjį failą.
-3.	Vykdykite instrukcijas, kad įvestumėte mokinio duomenis arba skaitytumėte duomenis iš failo.
-4.	Programa apskaičiuos galutinius pažymius ir parodys juos ekrane.
-Testavimas
-Programa buvo išbandyta naudojant įvairius įrašų dydžius ir konteinerių tipus, kad būtų užtikrintas jos veikimas ir funkcionalumas. Testavimo parametrai apima procesoriaus, RAM ir HDD specifikacijas.
-
 
 Diegimas :
 Prieš paleisdami kodą įsitikinkite, kad jūsų sistemoje yra įdiegtas C++ kompiliatorius.
